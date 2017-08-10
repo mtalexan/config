@@ -1,0 +1,87 @@
+[global_config]
+  always_split_with_profile = True
+  enabled_plugins = ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
+  focus = system
+  inactive_color_offset = 0.66
+  tab_position = bottom
+  title_font = DejaVu Sans Mono 10
+  title_hide_sizetext = True
+  title_use_system_font = False
+[keybindings]
+  broadcast_all = None
+  broadcast_group = None
+  broadcast_off = None
+  close_term = <Alt>minus
+  close_window = None
+  copy = <Primary><Shift>Delete
+  cycle_next = None
+  cycle_prev = None
+  edit_window_title = F9
+  go_down = None
+  go_left = None
+  go_next = <Alt>0
+  go_prev = <Shift><Alt>parenright
+  go_right = None
+  go_up = None
+  group_all = None
+  group_tab = None
+  hide_window = None
+  insert_number = None
+  insert_padded = None
+  layout_launcher = None
+  line_down = <Shift>Down
+  line_up = <Shift>Up
+  move_tab_left = None
+  move_tab_right = None
+  new_tab = None
+  new_terminator = None
+  new_window = <Primary><Shift>t
+  next_tab = None
+  page_down = <Shift>Page_Down
+  page_up = <Shift>Page_Up
+  paste = <Primary><Shift>Insert
+  prev_tab = None
+  reset = None
+  reset_clear = None
+  resize_down = None
+  resize_left = None
+  resize_right = None
+  resize_up = None
+  rotate_ccw = None
+  rotate_cw = None
+  scaled_zoom = None
+  split_horiz = <Alt>2
+  split_vert = <Alt>3
+  toggle_scrollbar = None
+  toggle_zoom = None
+  ungroup_all = None
+  ungroup_tab = None
+  zoom_in = None
+  zoom_normal = None
+  zoom_out = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    audible_bell = True
+    background_image = None
+    copy_on_selection = True
+    cursor_blink = False
+    cursor_color = "#d85d5d"
+    cursor_shape = ibeam
+    font = Liberation Mono 11
+    foreground_color = "#00ff00"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scroll_on_output = False
+    scrollback_infinite = True
+    show_titlebar = False
+    split_to_group = True
+    urgent_bell = True
+    use_system_font = False
