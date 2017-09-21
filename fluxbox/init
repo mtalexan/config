@@ -59,7 +59,7 @@ session.screen0.focusModel:	ClickFocus
 session.screen0.focusSameHead:	false
 session.tabsAttachArea:	Window
 session.forcePseudoTransparency:	false
-session.styleFile:	/home/mike/.fluxbox/styles/blackend1.3
+session.styleFile:	/home/mike/.fluxbox/styles/giediPrime
 session.ignoreBorder:	false
 session.cacheMax:	200
 session.styleOverlay:	/home/mike/.fluxbox/overlay
