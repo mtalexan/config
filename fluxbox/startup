@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/mike/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+
+# Allow gnome related things
+if [ "x$(pidof gnome-settings-daemon)" == "x" ] ; then
+    gnome-settings-daemon &
+fi
+
+# Keep nautilus running in the background to automate things
+if [ "x$(pidof nautilus)" == "x" ] ; then
+    nautilus -n --no-desktop &
+fi
+
+# Debian-local change:
+#   - fbautostart has been added with a quick hack to check to see if it
+#     exists. If it does, we'll start it up by default.
+which fbautostart > /dev/null
+if [ $? -eq 0 ]; then
+    fbautostart
+fi
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/mike/.fluxbox/log"

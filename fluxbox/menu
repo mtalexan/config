@@ -1,0 +1,5 @@
+[begin] (fluxbox)
+[exec] (Terminator) {/usr/bin/terminator}
+[exec] (Firefox) {/usr/bin/firefox}
+[include] (/etc/X11/fluxbox/fluxbox-menu)
+[end]
