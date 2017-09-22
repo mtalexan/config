@@ -34,9 +34,19 @@ fi
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
 #     exists. If it does, we'll start it up by default.
+# This is modified by the Ubuntu provided startup tool via gnome-session-properties
+#
+# The files we look for are in ~/.config/fluxbox-autostart and
+# gnome-session-properties modifies the ones in ~/.config/autostart.
+# Symlink the ones you want enabled into ~/.config/fluxbox-autostart/autostart
+# This will also start everything in /etc/xdg/autostart/, which is where
+# Unity and other launchers store their system GUI startup files.  You may
+# need to hand modify the files there to add FLUXBOX to OnlyShowIn and NotShowIn lists, eg:
+#  OnlyShowIn=Unity;FLUXBOX;
+#  NotShowIn=GNOME;Unity:FLUXBOX;
 which fbautostart > /dev/null
 if [ $? -eq 0 ]; then
-    fbautostart
+    XDG_CONFIG_HOME=~/.config/fluxbox-autostart/ fbautostart &
 fi
 
 # And last but not least we start fluxbox.
@@ -44,4 +54,4 @@ fi
 
 #exec fluxbox
 # or if you want to keep a log:
- exec fluxbox -log "~/.fluxbox/log"
+exec fluxbox -log "~/.fluxbox/log"

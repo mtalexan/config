@@ -51,9 +51,6 @@ Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
 Mod4 Tab :NextTab
 Mod4 Shift Tab :PrevTab
 
-# Maximize and un-maximize with Win+M
-Mod4 M :MaximizeWindow
-
 # go to a specific tab in the current window
 Mod4 1 :Tab 1
 Mod4 2 :Tab 2
@@ -69,7 +66,7 @@ Mod4 9 :Tab 9
 Mod1 F1 :Exec terminator
 
 # open a dialog to run programs (like launchy)
-Mod4 bracketright :Exec fbrun
+Mod4 bracketright :Exec fbrun -fg white -bg black
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
@@ -83,24 +80,31 @@ Mod1 F5 :Kill
 Mod1 F9 :Minimize
 Mod1 F10 :Maximize
 Mod1 F11 :Fullscreen
+Mod4 M :MaximizeWindow
+
+Shift Mod4 Left :ResizeHorizontal -5
+Shift Mod4 Right :ResizeHorizontal 5
+Shift Mod4 Up :ResizeVertical -1
+Shift Mod4 Down :ResizeVertical 1
+Shift Mod4 J :ResizeHorizontal -5
+Shift Mod4 L :ResizeHorizontal 5
+Shift Mod4 I :ResizeVertical -1
+Shift Mod4 K :ResizeVertical 1
+
+Control Shift Mod4 Left :MoveLeft 5
+Control Shift Mod4 Right :MoveRight 5
+Control Shift Mod4 Up :MoveUp 5
+Control Shift Mod4 Down :MoveDown 5
+Control Shift Mod4 J :MoveLeft 5
+Control Shift Mod4 L :MoveRight 5
+Control Shift Mod4 I :MoveUp 5
+Control Shift Mod4 K :MoveDown 5
 
 ## open the window menu
 #Mod1 space :WindowMenu
 
 # exit fluxbox
 Control Mod1 Delete :Exit
-
-# change to previous/next workspace
-Control Mod1 Left :PrevWorkspace
-Control Mod1 Right :NextWorkspace
-
-# send the current window to previous/next workspace
-Mod4 Left :SendToPrevWorkspace
-Mod4 Right :SendToNextWorkspace
-
-# send the current window and follow it to previous/next workspace
-Control Mod4 Left :TakeToPrevWorkspace
-Control Mod4 Right :TakeToNextWorkspace
 
 # change to a specific workspace
 Control F1 :Workspace 1
@@ -115,6 +119,12 @@ Control F9 :Workspace 9
 Control F10 :Workspace 10
 Control F11 :Workspace 11
 Control F12 :Workspace 12
+
+# change to previous/next workspace
+Control Mod1 Left :PrevWorkspace
+Control Mod1 Right :NextWorkspace
+Control Mod1 J :PrevWorkspace
+Control Mod1 L :NextWorkspace
 
 # send the current window to a specific workspace
 Mod4 F1 :SendToWorkspace 1
@@ -143,3 +153,16 @@ Control Mod4 F9 :TakeToWorkspace 9
 Control Mod4 F10 :TakeToWorkspace 10
 Control Mod4 F11 :TakeToWorkspace 11
 Control Mod4 F12 :TakeToWorkspace 12
+
+# send the current window and follow it to previous/next workspace
+Control Mod4 Left :TakeToPrevWorkspace
+Control Mod4 Right :TakeToNextWorkspace
+Control Mod4 J :TakeToPrevWorkspace
+Control Mod4 L :TakeToNextWorkspace
+
+# send the current window to previous/next workspace
+Mod4 Left :SendToPrevHead
+Mod4 Right :SendToNextHead
+
+# Win+D minimizes/unminimizes everything
+Mod4 D :ShowDesktop
