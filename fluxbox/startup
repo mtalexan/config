@@ -5,7 +5,7 @@
 # Lines starting with a '#' are ignored.
 
 # Change your keymap:
-xmodmap "/home/mike/.Xmodmap"
+xmodmap "~/.Xmodmap"
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
@@ -16,9 +16,20 @@ if [ "x$(pidof gnome-settings-daemon)" == "x" ] ; then
 fi
 
 # Keep nautilus running in the background to automate things
+# like USB hotplug and whatnot
 if [ "x$(pidof nautilus)" == "x" ] ; then
     nautilus -n --no-desktop &
 fi
+
+########################################################################
+
+# All changes that shouldn't be shared among everyone should be
+# placed in this file, creating it if necessary
+if [ -e ~/.fluxbox/custom-startup ] ; then
+    source ~/.fluxbox/custom-startup
+fi
+
+#########################################################################
 
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
@@ -33,4 +44,4 @@ fi
 
 exec fluxbox
 # or if you want to keep a log:
-# exec fluxbox -log "/home/mike/.fluxbox/log"
+# exec fluxbox -log "~/.fluxbox/log"
