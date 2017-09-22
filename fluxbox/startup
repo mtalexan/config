@@ -26,7 +26,7 @@ fi
 # All changes that shouldn't be shared among everyone should be
 # placed in this file, creating it if necessary
 if [ -e ~/.fluxbox/custom-startup ] ; then
-    source ~/.fluxbox/custom-startup
+    ~/.fluxbox/custom-startup
 fi
 
 #########################################################################
@@ -42,6 +42,6 @@ fi
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
-exec fluxbox
+#exec fluxbox
 # or if you want to keep a log:
-# exec fluxbox -log "~/.fluxbox/log"
+ exec fluxbox -log "~/.fluxbox/log"
