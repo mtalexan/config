@@ -1,3 +1,6 @@
 [submodule "fluxbox"]
 	path = fluxbox
 	url = https://github.com/mtalexan/fluxbox
+[submodule "awesome"]
+	path = awesome
+	url = https://github.com/mtalexan/awesomeWM.git
