@@ -9,7 +9,7 @@ defscrollback 999999
 
 # Set the log file location to the tmp filesystem so it's always
 # in a known location.
-logfile /tmp/screenlog.$$
+logfile /tmp/screenlog.%n
 
 # Enable logging to a file by default
 # This file will be called "screenlog.nnnn" in the current directory
