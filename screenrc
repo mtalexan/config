@@ -1,2 +1,17 @@
 # Enable mouse scrolling and scroll bar history scrolling
 termcapinfo xterm* ti@:te@
+
+# Don't show startup message
+startup_message off
+
+# Set the scrollback to 999999 lines
+defscrollback 999999
+
+# Set the log file location to the tmp filesystem so it's always
+# in a known location.
+logfile /tmp/screenlog.$$
+
+# Enable logging to a file by default
+# This file will be called "screenlog.nnnn" in the current directory
+# by default.
+deflog on
