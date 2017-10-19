@@ -8,10 +8,22 @@ startup_message off
 defscrollback 999999
 
 # Set the log file location to the tmp filesystem so it's always
-# in a known location.
-logfile /tmp/screenlog.%H_%m%d%Y_%0c.%n
+# in a known location. %p in this context means the PID, so %p.%S
+# will give the name of the screen as it appears in screen -ls
+# These are called "String Escapes" in official docs
+logfile /tmp/screenlog.%m%d%Y_%0c:%0s.%p.%S
 
 # Enable logging to a file by default
 # This file will be called "screenlog.nnnn" in the current directory
 # by default.
 deflog on
+
+# On SIGHUP
+autodetach on
+
+#Drop some commands we don't want
+#Change the hjkl movement keys while in copy mode to be jkli
+#Do word moves with Shift+j and Shift+l
+#Start and end of line with Ctrl+u and Ctrl+o
+#Page up and down with Shift+i and Shift+k
+markkeys "@=L=H=w=+=-:l=l:k=i:j=k:h=j:b=J:e=L:0=^u:$=^o:^f=K:^b=I:g=^<:G=g"
