@@ -2,6 +2,7 @@
   always_split_with_profile = True
   enabled_plugins = ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
   focus = system
+  geometry_hinting = False
   inactive_color_offset = 0.66
   tab_position = bottom
   title_font = DejaVu Sans Mono 10
