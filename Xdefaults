@@ -1,0 +1,141 @@
+! For these settings to take effect, run "xrdb ~/.Xdefaults" to apply the
+! changes, then re-run the program.
+
+! Use xfontsel to look at x11 fonts (instead of truetype)
+! Put it here:
+!xterm*font: -*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
+! Alternatively specifiy a truetype font
+xterm*faceName: Inconsolata:size=10:antialias=true
+xterm*faceSize: 10
+
+xterm*saveLines: 999999
+!xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+! use a recognized name
+xterm*termName: xterm-256color
+xterm*eightBitInput: false
+! Use system clipboard 
+xterm*selectToClipboard: true
+! Alt key works properly instead of being used for UTF-8 characters
+xterm*metaSendsEscape: true
+! disable scrollbar visibility
+xterm*scrollBar: false
+
+! See https://jonasjacek.github.io/colors/ for color to hex conversions
+!  or /usr/share/emacs/*/etc/rgb.txt or /usr/share/vim/*/rgb.txt
+! Colors can be explicitly specified in hex as "#rrggbb" or
+!  as "rgb:rr/gg/bb", or by name
+
+!Block Cursor
+#define _color0        #000d18
+#define _color8        #000d18
+!RED Tag
+#define _color1        #e89393
+#define _color9        #e89393
+!GRN SpecialKey
+#define _color2        #9ece13
+#define _color10       #9ece13
+!YEL Keyword
+#define _color3        #f0dfaf
+#define _color11       #f0dfaf
+!BLU Number
+#define _color4        #8cd0d3
+#define _color12       #8cd0d3
+!MAG Precondit
+#define _color5        #c0bed1
+#define _color13       #c0bed1
+!CYN Float
+#define _color6        #dfaf8f
+#define _color14       #dfaf8f
+!WHT Search
+#define _color7        #efefef
+#define _color15       #efefef
+!Bold, Underline, Italic with color, can be used with or instead of font change
+#define _colorBDInstead false
+#define _colorBD       #ffcfaf
+#define _colorULInstead false
+#define _colorUL       #ccdc90
+#define _colorITInstead false
+#define _colorIT       #80d4aa
+!TXT Normal, Normal, Cursor
+#define _foreground    chartreuse
+!#dcdccc
+#define _background    black
+!#1f1f1f
+#define _cursorColor   red
+!#8faf9f
+
+rxvt*color0         : _color0
+rxvt*color1         : _color1
+rxvt*color2         : _color2
+rxvt*color3         : _color3
+rxvt*color4         : _color4
+rxvt*color5         : _color5
+rxvt*color6         : _color6
+rxvt*color7         : _color7
+rxvt*color8         : _color8
+rxvt*color9         : _color9
+rxvt*color10        : _color10
+rxvt*color11        : _color11
+rxvt*color12        : _color12
+rxvt*color13        : _color13
+rxvt*color14        : _color14
+rxvt*color15        : _color15
+rxvt*colorBDMode    : _colorBDInstead
+rxvt*colorBD        : _colorBD
+rxvt*colorITMode    : _colorITInstead
+rxvt*colorIT        : _colorIT
+rxvt*colorULMode    : _colorULInstead
+rxvt*colorUL        : _colorUL
+rxvt*foreground     : _foreground
+rxvt*background     : _background
+rxvt*cursorColor    : _cursorColor
+urxvt*color0         : _color0
+urxvt*color1         : _color1
+urxvt*color2         : _color2
+urxvt*color3         : _color3
+urxvt*color4         : _color4
+urxvt*color5         : _color5
+urxvt*color6         : _color6
+urxvt*color7         : _color7
+urxvt*color8         : _color8
+urxvt*color9         : _color9
+urxvt*color10        : _color10
+urxvt*color11        : _color11
+urxvt*color12        : _color12
+urxvt*color13        : _color13
+urxvt*color14        : _color14
+urxvt*color15        : _color15
+urxvt*colorBDMode    : _colorBDInstead
+urxvt*colorBD        : _colorBD
+urxvt*colorITMode    : _colorITInstead
+urxvt*colorIT        : _colorIT
+urxvt*colorULMode    : _colorULInstead
+urxvt*colorUL        : _colorUL
+urxvt*foreground     : _foreground
+urxvt*background     : _background
+urxvt*cursorColor    : _cursorColor
+xterm*color0         : _color0
+xterm*color1         : _color1
+xterm*color2         : _color2
+xterm*color3         : _color3
+xterm*color4         : _color4
+xterm*color5         : _color5
+xterm*color6         : _color6
+xterm*color7         : _color7
+xterm*color8         : _color8
+xterm*color9         : _color9
+xterm*color10        : _color10
+xterm*color11        : _color11
+xterm*color12        : _color12
+xterm*color13        : _color13
+xterm*color14        : _color14
+xterm*color15        : _color15
+xterm*colorBDMode    : _colorBDInstead
+xterm*colorBD        : _colorBD
+xterm*colorITMode    : _colorITInstead
+xterm*colorIT        : _colorIT
+xterm*colorULMode    : _colorULInstead
+xterm*colorUL        : _colorUL
+xterm*foreground     : _foreground
+xterm*background     : _background
+xterm*cursorColor    : _cursorColor
