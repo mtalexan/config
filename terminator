@@ -85,4 +85,3 @@
     show_titlebar = False
     split_to_group = True
     urgent_bell = True
-    use_custom_command = True
