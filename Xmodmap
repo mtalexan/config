@@ -1,0 +1,10 @@
+! Clear right-Alt
+remove mod1 = Alt_R
+
+! clear it so we can set it
+clear mod4
+! right-Alt to Hyper_R
+keycode 108 = Hyper_R
+! Search key on Chromebooks in crouton mapped to keycode 133
+keycode 133 = Hyper_L
+add mod4 = Super_L Hyper_L Hyper_R
