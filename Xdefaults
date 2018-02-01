@@ -45,6 +45,19 @@ rxvt*saveLines      : 999999
 urxvt*saveLines      : 999999
 xterm*saveLines      : 999999
 
+! Don't autoscroll on output, but on keypress
+rxvt*scrollTtyKeypress: true
+rxvt*scrollTtyOutputInhibit: true
+rxvt*scrollTtyOutput: false
+
+urxvt*scrollTtyKeypress: true
+urxvt*scrollTtyOutputInhibit: true
+urxvt*scrollTtyOutput: false
+
+xterm*scrollTtyKeypress: true
+xterm*scrollTtyOutputInhibit: true
+xterm*scrollTtyOutput: false
+
 ! See https://jonasjacek.github.io/colors/ for color to hex conversions
 !  or /usr/share/emacs/*/etc/rgb.txt or /usr/share/vim/*/rgb.txt
 !  as "rgb:rr/gg/bb", or by name
