@@ -7,43 +7,50 @@
 ! Alternatively specifiy a truetype font
 rxvt*faceName       : Inconsolata:size=10:antialias=true
 urxvt*faceName       : Inconsolata:size=10:antialias=true
-xterm*faceName       : Inconsolata:size=10:antialias=true
+*xterm*faceName       : Inconsolata:size=10:antialias=true
+*XTerm*faceName       : Inconsolata:size=10:antialias=true
 
 ! Add "word" characters !#%*+-./:?@_~
 !  Ascii char/range:class 48 ("word class")
 rxvt*charClass      : 33:48,35:48,37:48,42-43:48,45-47:48,58:48,63-64:48,95:48,126:48
 urxvt*charClass      : 33:48,35:48,37:48,42-43:48,45-47:48,58:48,63-64:48,95:48,126:48
-xterm*charClass      : 33:48,35:48,37:48,42-43:48,45-47:48,58:48,63-64:48,95:48,126:48
+*xterm*charClass      : 33:48,35:48,37:48,42-43:48,45-47:48,58:48,63-64:48,95:48,126:48
+*XTerm*charClass      : 33:48,35:48,37:48,42-43:48,45-47:48,58:48,63-64:48,95:48,126:48
 
 ! disable the Alt+Enter fullscreen mode and let the window manager handle it
 rxvt*fullscreen     : never
 urxvt*fullscreen     : never
-xterm*fullscreen     : never
+*xterm*fullscreen     : never
 
 ! use a recognized name for the terminal type
 rxvt*termName       : xterm-256color
 urxvt*termName       : xterm-256color
-xterm*termName       : xterm-256color
+*xterm*termName       : xterm-256color
+*XTerm*termName       : xterm-256color
 
 ! disable scrollbar visibility
 rxvt*scrollBar      : false
 urxvt*scrollBar      : false
-xterm*scrollBar      : false
+*xterm*scrollBar      : false
+*XTerm*scrollBar      : false
 
 ! Alt key works properly instead of being used for UTF-8 characters
 rxvt*metaSendsEscape : true
 urxvt*metaSendsEscape : true
-xterm*metaSendsEscape : true
+*xterm*metaSendsEscape : true
+*XTerm*metaSendsEscape : true
 
 ! Use system clipboard
 rxvt*selectToClipboard : true
 urxvt*selectToClipboard : true
-xterm*selectToClipboard : true
+*xterm*selectToClipboard : true
+*XTerm*selectToClipboard : true
 
 ! Lines of history to keep
 rxvt*saveLines      : 999999
 urxvt*saveLines      : 999999
-xterm*saveLines      : 999999
+*xterm*saveLines      : 999999
+*XTerm*saveLines      : 999999
 
 ! Don't autoscroll on output, but on keypress
 rxvt*scrollTtyKeypress: true
@@ -54,9 +61,14 @@ urxvt*scrollTtyKeypress: true
 urxvt*scrollTtyOutputInhibit: true
 urxvt*scrollTtyOutput: false
 
-xterm*scrollTtyKeypress: true
-xterm*scrollTtyOutputInhibit: true
-xterm*scrollTtyOutput: false
+*xterm*scrollTtyKeypress: true
+*xterm*scrollTtyOutputInhibit: true
+*xterm*scrollTtyOutput: false
+
+*XTerm*scrollTtyKeypress: true
+*XTerm*scrollTtyOutputInhibit: true
+*XTerm*scrollTtyOutput: false
+
 
 ! See https://jonasjacek.github.io/colors/ for color to hex conversions
 !  or /usr/share/emacs/*/etc/rgb.txt or /usr/share/vim/*/rgb.txt
@@ -65,14 +77,17 @@ xterm*scrollTtyOutput: false
 !chartreuse=0x7fff00
 rxvt*foreground     : #7fff00
 urxvt*foreground     : #7fff00
-xterm*foreground     : #7fff00
+*xterm*foreground     : #7fff00
+*XTerm*foreground     : #7fff00
 
 !black=0x000000
 rxvt*background     : #000000
 urxvt*background     : #000000
-xterm*background     : #000000
+*xterm*background     : #000000
+*XTerm*background     : #000000
 
 !red=0xff0000
 rxvt*cursorColor    : #ff0000
 urxvt*cursorColor    : #ff0000
-xterm*cursorColor    : #ff0000
+*xterm*cursorColor    : #ff0000
+*XTerm*cursorColor    : #ff0000
