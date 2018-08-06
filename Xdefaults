@@ -52,7 +52,7 @@ urxvt*saveLines      : 999999
 *xterm*saveLines      : 999999
 *XTerm*saveLines      : 999999
 
-! Don't autoscroll on output, but on keypress
+! Do not autoscroll on output, but on keypress
 rxvt*scrollTtyKeypress: true
 rxvt*scrollTtyOutputInhibit: true
 rxvt*scrollTtyOutput: false
