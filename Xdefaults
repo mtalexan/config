@@ -5,7 +5,7 @@
 ! Put it here:
 !xterm*font: -*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
 ! Alternatively specifiy a truetype font
-rxvt*faceName       : Inconsolata:size=10:antialias=true
+rxvt*faceName       : Inconsolata:size=11:antialias=true
 urxvt*faceName       : Inconsolata:size=10:antialias=true
 *xterm*faceName       : Inconsolata:size=10:antialias=true
 *XTerm*faceName       : Inconsolata:size=10:antialias=true
@@ -34,6 +34,12 @@ urxvt*scrollBar      : false
 *xterm*scrollBar      : false
 *XTerm*scrollBar      : false
 
+! allow scroll lock to lock the viewport from scrolling
+rxvt*AllowScrollLock        : true
+urxvt*AllowScrollLock       : true
+*xterm*AllowScrollLock      : true
+*XTerm*AllowScrollLock      : true
+
 ! Alt key works properly instead of being used for UTF-8 characters
 rxvt*metaSendsEscape : true
 urxvt*metaSendsEscape : true
@@ -56,18 +62,30 @@ urxvt*saveLines      : 999999
 rxvt*scrollTtyKeypress: true
 rxvt*scrollTtyOutputInhibit: true
 rxvt*scrollTtyOutput: false
+rxvt*scrollKey: true
+rxvt*scrollkey: true
+rxvt*scrollttyoutput: false
 
 urxvt*scrollTtyKeypress: true
 urxvt*scrollTtyOutputInhibit: true
 urxvt*scrollTtyOutput: false
+urxvt*scrollKey: true
+urxvt*scrollkey: true
+urxvt*scrollttyoutput: false
 
 *xterm*scrollTtyKeypress: true
 *xterm*scrollTtyOutputInhibit: true
 *xterm*scrollTtyOutput: false
+*xterm*scrollKey: true
+*xterm*scrollkey: true
+*xterm*scrollttyoutput: false
 
 *XTerm*scrollTtyKeypress: true
 *XTerm*scrollTtyOutputInhibit: true
 *XTerm*scrollTtyOutput: false
+*XTerm*scrollKey: true
+*XTerm*scrollkey: true
+*XTerm*scrollttyoutput: false
 
 
 ! See https://jonasjacek.github.io/colors/ for color to hex conversions
