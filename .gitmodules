@@ -4,3 +4,6 @@
 [submodule "awesome"]
 	path = awesome
 	url = https://github.com/mtalexan/awesomeWM.git
+[submodule "i3"]
+	path = i3
+	url = https://github.com/mtalexan/i3wm.git
