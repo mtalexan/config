@@ -10,3 +10,6 @@
 [submodule "rofi"]
 	path = rofi
 	url = https://github.com/mtalexan/rofi.git
+[submodule "polybar/polybar"]
+	path = polybar/polybar
+	url = https://github.com/jaagr/polybar.git
