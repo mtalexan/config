@@ -1,6 +1,13 @@
 ! For these settings to take effect, run "xrdb ~/.Xdefaults" to apply the
 ! changes, then re-run the program.
 
+! use a recognized name for the terminal type
+Rxvt*termName       : rxvt-unicode
+URxvt*termName      : rxvt-unicode
+*xterm*termName     : xterm-256color
+*XTerm*termName     : xterm-256color
+!KTerm*termName      : xterm-256color
+
 ! Use xfontsel to look at x11 fonts (instead of truetype)
 ! Put it here:
 !xterm*font: -*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
@@ -26,13 +33,6 @@ URxvt*fullscreen    : never
 *xterm*fullscreen   : never
 *XTerm*fullscreen   : never
 KTerm*fullscreen    : never
-
-! use a recognized name for the terminal type
-Rxvt*termName       : xterm-256color
-URxvt*termName      : xterm-256color
-*xterm*termName     : xterm-256color
-*XTerm*termName     : xterm-256color
-KTerm*termName      : xterm-256color
 
 ! disable scrollbar visibility
 Rxvt*scrollBar      : false
