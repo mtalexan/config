@@ -156,6 +156,11 @@ URxvt.keysym.Shift-Control-k:  \033[1;6B
 *scrollTtyOutput:            false
 ! URxvt*scrollTtyKeypress:          boolean
 *scrollTtyKeypress:          true
+!!! The names in the documentation for UXTerm/XTerm are inconsistently capitalized, so set all the possibilities
+*scrollTtyOutputInhibit   : true
+*scrollKey                : true
+*scrollkey                : true
+*scrollttyoutput          : false
 ! URxvt*scrollWithBuffer:           boolean
 ! URxvt*tintColor:                  !7DA55
 ! URxvt*blurRadius:                 HxV
@@ -326,20 +331,6 @@ URxvt*insecure:                   true
 !!!*xterm*scrollKey                : true
 !!!*xterm*scrollkey                : true
 !!!*xterm*scrollttyoutput          : false
-!!!
-!!!XTerm*scrollTtyKeypress        : true
-!!!XTerm*scrollTtyOutputInhibit   : true
-!!!XTerm*scrollTtyOutput          : false
-!!!XTerm*scrollKey                : true
-!!!XTerm*scrollkey                : true
-!!!XTerm*scrollttyoutput          : false
-!!!
-!!!UXTerm*scrollTtyKeypress        : true
-!!!UXTerm*scrollTtyOutputInhibit   : true
-!!!UXTerm*scrollTtyOutput          : false
-!!!UXTerm*scrollKey                : true
-!!!UXTerm*scrollkey                : true
-!!!UXTerm*scrollttyoutput          : false
 !!!
 !!!KTerm*scrollTtyKeypress         : true
 !!!KTerm*scrollTtyOutputInhibit    : true
