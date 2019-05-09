@@ -186,9 +186,9 @@ URxvt*background:                 black
 URxvt*foreground:                 #92ed7d
 *saveLines:                  9999999
 
-! Add "word" characters !#%*+-./:?@_~
+! Add "word" characters !#%*+-./?@_~
 !  Ascii char/range:class 48 ("word class")
-*charClass     : 33:48,35:48,37:48,42-43:48,45-47:48,58:48,63-64:48,95:48,126:48
+*charClass     : 33:48,35:48,37:48,42-43:48,45-47:48,63-64:48,95:48,126:48
 
 ! disable the Alt+Enter fullscreen mode and let the window manager handle it
 *fullscreen    : never
