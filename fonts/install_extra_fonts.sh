@@ -1,28 +1,46 @@
 #!/bin/bash
 
-echo "Cloning nerd-fonts repo"
-git clone -b 2.0.0 --depth=1 https://github.com/ryanoasis/nerd-fonts.git nerd-fonts
-echo "Installing nerd-fonts"
-cd nerd-fonts
-./install.sh
-cd ..
-echo "Cleaning up nerd-fonts"
-rm -r nerd-fonts
+shopt -s nocasematch
 
-echo "Cloning powerline-fonts repo"
-git clone --depth=1 https://github.com/powerline/fonts.git powerline-fonts
-echo "Installing powerline-fonts"
-cd powerline-fonts
-./install.sh
-cd ..
-echo "Cleaning up powerline-fonts"
-rm -r powerline-fonts
+RESP=
+read -p "Clone and install nerd-fonts (very slow)? [Y/n]  " RESP
+if [ -z "$RESP" ] ||  [[ "$RESP" = "y" ]] ; then
+    NAME=nerd-fonts-${RANDOM}
+    echo "Cloning nerd-fonts repo"
+    git clone -b 2.0.0 --depth=1 https://github.com/ryanoasis/nerd-fonts.git ${NAME}
+    echo "Installing nerd-fonts"
+    cd ${NAME}
+    ./install.sh
+    cd ..
+    echo "Cleaning up nerd-fonts"
+    rm -rf ${NAME}
+fi
 
-if [[ "$(uname -n)" = "ubuntu" ]] ; then
+RESP=
+read -p "Clone and install powerline-fonts (slow)? [Y/n]  " RESP
+if [ -z "$RESP" ] ||  [[ "$RESP" = "y" ]] ; then
+    NAME=powerline-fonts-${RANDOM}
+    echo "Cloning powerline-fonts repo"
+    git clone --depth=1 https://github.com/powerline/fonts.git ${NAME}
+    echo "Installing powerline-fonts"
+    cd ${NAME}
+    ./install.sh
+    cd ..
+    echo "Cleaning up powerline-fonts"
+    rm -rf ${NAME}
+fi
+
+RESP=
+read -p "Install fontconfig override to allow fonts? [Y/n]  " RESP
+if [ -z "$RESP" ] ||  [[ "$RESP" = "y" ]] ; then
     echo "Installing font filter override"
     mkdir -p ~/.config/fontconfig/conf.d
-    BASH_SOURCE=$(dirname ${BASH[0]})
-    cp ${BASH_SOURCE}/50-enable-terminess-powerline.conf ~/.config/fontconfig/conf.d/
+
+    SCRIPT_DIR=$(dirname ${BASH_SOURCE[0]})
+    if [ -n "${SCRIPT_DIR}" ] ; then
+        SCRIPT_DIR=${SCRIPT_DIR}/
+    fi
+    cp ${SCRIPT_DIR}50-enable-terminess-powerline.conf ~/.config/fontconfig/conf.d/
 fi
 
 echo "Re-runing user-specific font-cache update"
