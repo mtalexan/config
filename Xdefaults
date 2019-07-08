@@ -182,7 +182,7 @@ KTerm*eightBitInput     : false
 
 URxvt.depth:                      32
 !URxvt.background:                 [100]#222D31
-URxvt.background:                 [100]#000000
+!URxvt.background:                 [100]#000000
 *scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                false
