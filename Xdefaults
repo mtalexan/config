@@ -147,7 +147,7 @@ XTerm*faceName: Inconsolata
 XTerm*faceSize: 9
 ! UXTerm does not use font, it uses faceName and faceSize
 UXTerm*faceName: DejaVu Sans Mono for Powerline
-UXTerm*faceSize: 9
+UXTerm*faceSize: 10
 
 
 ! alternative font settings with 'terminus':
