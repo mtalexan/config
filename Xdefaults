@@ -144,7 +144,7 @@ URxvt*font:                       xft:DejaVuSansMono Nerd Font:pixelsize=12
 KTerm*font:                       xft:DejaVuSansMono Nerd Font:pixelsize=12,xft:Inconsolata:size=9,9x15
 ! XTerm does not use font, it uses faceName and faceSize
 XTerm*faceName: Inconsolata
-XTerm*faceSize: 9
+XTerm*faceSize: 10
 ! UXTerm does not use font, it uses faceName and faceSize
 UXTerm*faceName: DejaVu Sans Mono for Powerline
 UXTerm*faceSize: 10
