@@ -13,3 +13,6 @@
 [submodule "polybar/polybar"]
 	path = polybar/polybar
 	url = https://github.com/jaagr/polybar.git
+[submodule "pekwm"]
+	path = pekwm
+	url = https://github.com/mtalexan/pekwm-config.git
