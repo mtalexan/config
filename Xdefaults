@@ -65,6 +65,7 @@
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+! adjust this value for display scaling
 Xft.dpi:       96
 Xft.antialias: true
 Xft.hinting:   true

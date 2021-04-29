@@ -1,18 +1,18 @@
 [submodule "fluxbox"]
 	path = fluxbox
-	url = https://github.com/mtalexan/fluxbox
+	url = git@github.com:mtalexan/fluxbox
 [submodule "awesome"]
 	path = awesome
-	url = https://github.com/mtalexan/awesomeWM.git
+	url = git@github.com:mtalexan/awesomeWM.git
 [submodule "i3"]
 	path = i3
-	url = https://github.com/mtalexan/i3wm.git
+	url = git@github.com:mtalexan/i3wm.git
 [submodule "rofi"]
 	path = rofi
-	url = https://github.com/mtalexan/rofi.git
+	url = git@github.com:mtalexan/rofi.git
 [submodule "polybar/polybar"]
 	path = polybar/polybar
-	url = https://github.com/jaagr/polybar.git
+	url = git@github.com:jaagr/polybar.git
 [submodule "pekwm"]
 	path = pekwm
-	url = https://github.com/mtalexan/pekwm-config.git
+	url = git@github.com:mtalexan/pekwm-config.git

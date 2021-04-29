@@ -2,7 +2,6 @@
   always_split_with_profile = True
   enabled_plugins = ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
   focus = system
-  geometry_hinting = False
   inactive_color_offset = 0.66
   tab_position = bottom
   title_font = DejaVu Sans Mono 10
@@ -17,13 +16,15 @@
   copy = <Primary><Shift>Delete
   cycle_next = None
   cycle_prev = None
+  edit_tab_title = None
+  edit_terminal_title = None
   edit_window_title = F9
-  go_down = None
-  go_left = None
-  go_next = <Alt>0
-  go_prev = <Shift><Alt>parenright
-  go_right = None
-  go_up = None
+  go_down = <Super>k
+  go_left = <Super>j
+  go_next = None
+  go_prev = None
+  go_right = <Super>l
+  go_up = <Super>i
   group_all = None
   group_tab = None
   hide_window = None
@@ -37,11 +38,11 @@
   new_tab = None
   new_terminator = None
   new_window = <Primary><Shift>t
-  next_tab = None
+  next_tab = <Super>n
   page_down = <Shift>Page_Down
   page_up = <Shift>Page_Up
   paste = <Primary><Shift>Insert
-  prev_tab = None
+  prev_tab = <Super>p
   reset = None
   reset_clear = None
   resize_down = None
@@ -64,6 +65,7 @@
   [[default]]
     [[[child1]]]
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -72,18 +74,19 @@
 [profiles]
   [[default]]
     audible_bell = True
-    background_image = None
+    background_color = "#002b36"
     copy_on_selection = True
     cursor_blink = False
     cursor_color = "#d85d5d"
     cursor_shape = ibeam
-    custom_command = screen -A -a
+    custom_command = zsh
     font = Liberation Mono 11
-    foreground_color = "#00ff00"
-    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
-    scroll_on_output = False
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
     split_to_group = True
     urgent_bell = True
+    use_custom_command = True
+    word_chars = "-,./?%&#_"
