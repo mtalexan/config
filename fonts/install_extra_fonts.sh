@@ -2,6 +2,13 @@
 
 shopt -s nocasematch
 
+echo "Installing hook for nix fonts"
+SCRIPT_DIR=$(dirname ${BASH_SOURCE[0]})
+if [ -n "${SCRIPT_DIR}" ] ; then
+    SCRIPT_DIR=${SCRIPT_DIR}/
+fi
+cp ${SCRIPT_DIR}10-nix-fonts.conf ~/.config/fontconfig/conf.d/ 
+
 RESP=
 read -p "Clone and install nerd-fonts (very slow)? [Y/n]  " RESP
 if [ -z "$RESP" ] ||  [[ "$RESP" = "y" ]] ; then
