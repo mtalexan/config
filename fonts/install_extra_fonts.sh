@@ -2,11 +2,14 @@
 
 shopt -s nocasematch
 
-echo "Installing hook for nix fonts"
 SCRIPT_DIR=$(dirname ${BASH_SOURCE[0]})
 if [ -n "${SCRIPT_DIR}" ] ; then
     SCRIPT_DIR=${SCRIPT_DIR}/
 fi
+
+
+echo "Installing hook for nix fonts"
+mkdir -p ~/.config/fontconfig/conf.d
 cp ${SCRIPT_DIR}10-nix-fonts.conf ~/.config/fontconfig/conf.d/ 
 
 RESP=
@@ -41,12 +44,6 @@ RESP=
 read -p "Install fontconfig override to allow fonts? [Y/n]  " RESP
 if [ -z "$RESP" ] ||  [[ "$RESP" = "y" ]] ; then
     echo "Installing font filter override"
-    mkdir -p ~/.config/fontconfig/conf.d
-
-    SCRIPT_DIR=$(dirname ${BASH_SOURCE[0]})
-    if [ -n "${SCRIPT_DIR}" ] ; then
-        SCRIPT_DIR=${SCRIPT_DIR}/
-    fi
     cp ${SCRIPT_DIR}50-enable-terminess-powerline.conf ~/.config/fontconfig/conf.d/
 fi
 

@@ -6,7 +6,7 @@
   enabled_plugins = InactivityWatch, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler
   always_split_with_profile = True
   title_use_system_font = False
-  title_font = DejaVu Sans Mono 10
+  title_font = DejaVu Sans Mono for Powerline 12
 [keybindings]
   zoom_in = None
   zoom_out = None
@@ -68,7 +68,7 @@
     background_color = "#002b36"
     cursor_blink = False
     cursor_color = "#d85d5d"
-    font = Liberation Mono 11
+    font = DejaVuSansMono Nerd Font 11
     foreground_color = "#839496"
     show_titlebar = False
     scrollbar_position = hidden
@@ -77,6 +77,7 @@
     word_chars = "-,./?%&#_~:"
     use_custom_command = True
     custom_command = zsh
+    use_system_font = False
     copy_on_selection = True
     split_to_group = True
 [layouts]
